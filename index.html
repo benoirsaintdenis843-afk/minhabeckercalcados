@@ -1,4 +1,3 @@
-import weasyprint
 
 html_content = """<!DOCTYPE html>
 <html lang="pt-BR">
@@ -423,12 +422,4 @@ html_content = """<!DOCTYPE html>
 
 </body>
 </html>
-"""
 
-# Save HTML file
-with open("index_becker.html", "w", encoding="utf-8") as f:
-    f.write(html_content)
-
-# Render to PDF
-weasyprint.HTML("index_becker.html").write_pdf("lojas_becker_ficha_cadastral.pdf")
-print("Files created successfully.")
